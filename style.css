@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;	
+	font-family: Raleway, sans-serif;
+}
+
+body {
+	background:url('./images/app-bg.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+.screen {		
+	background:rgb(255 255 255 / 44%);
+	position: relative;	
+	height: 600px;
+	width: 400px;	
+	border-radius: 10px;
+  overflow: hidden;
+	box-shadow: 0px 0px 24px #2b2b2b
+}
+
+.screen-content {
+	z-index: 1;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	padding: 30px 50px;
+	align-items: center;
+	justify-content: center;
+}
+
+.logo-wrapper img {
+	max-width: 200px;
+	max-height: 70px;
+}
+
+.login {
+	width: 320px;
+	padding: 30px;
+	margin-top: 45px;
+}
+
+.login-field {
+	padding: 20px 0px;	
+	position: relative;	
+}
+
+.login-field.password{
+	padding-top: 0;
+}
+
+.login-field.password .fa-lock {
+	top: 10px;
+}
+
+.login-icon {
+	position: absolute;
+	top: 30px;
+	left: 15px;
+	color: #47525d;
+}
+
+.login-input {
+	padding: 10px;
+	padding-left: 40px;
+	font-weight: 700;
+	width: 100%;
+	transition: .2s;
+	border: none;
+	border-radius: 3px;
+	background: rgb(255 255 255 / 76%);
+}
+
+.login-input:active,
+.login-input:focus,
+.login-input:hover {
+	outline: none;
+}
+
+.login-submit {
+	background: rgb(254 254 254 / 80%);
+	font-size: 14px;
+	margin-top: 30px;
+	padding: 11px 20px;
+	border-radius: 30px;
+	border: none;
+	text-transform: uppercase;
+	font-weight: 700;
+	width: 100%;
+	text-align: center;
+	cursor: pointer;
+	transition: .2s;
+}
+
+.login-submit:active,
+.login-submit:focus,
+.login-submit:hover {
+	border-color: #6A679E;
+	outline: none;
+}
+
+.social-login {	
+	height: 140px;
+	width: 160px;
+	text-align: center;
+	bottom: 0px;
+	right: 0px;
+	color: #fff;
+}
+
+.social-icons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.social-login-icon {
+	padding: 20px 10px;
+	color: #fff;
+	font-size: 25px;
+	text-decoration: none;	
+	text-shadow: 0px 0px 8px #7875B5;
+}
+
+.social-login {
+	color: #000;
+}
+.social-login a {
+	color: #000;
+}
+.social-login h3 {
+	margin-top: 50px;
+	font-size: 22px;
+}
+.social-login-icon:hover {
+	transition: .2s;
+	transform: scale(1.1);	
+}
